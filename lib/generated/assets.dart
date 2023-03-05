@@ -9,11 +9,15 @@ class Assets {
   static const String iconsFavouriteIc = 'assets/icons/favourite_ic.png';
   static const String iconsHomeIc = 'assets/icons/home_ic.png';
   static const String iconsLocationIc = 'assets/icons/location_ic.png';
+  static const String iconsLogOut = 'assets/icons/log_out.png';
   static const String iconsMenuIc = 'assets/icons/menu_ic.png';
+  static const String iconsMyCart = 'assets/icons/my_cart.png';
   static const String iconsNotifyIc = 'assets/icons/notify_ic.png';
+  static const String iconsOrder = 'assets/icons/order.png';
   static const String iconsSearchIc = 'assets/icons/search_ic.png';
   static const String iconsUserIc = 'assets/icons/user_ic.png';
   static const String imagesBottomnavBg = 'assets/images/bottomnav_bg.png';
+  static const String imagesProfileImg = 'assets/images/profile_img.png';
   static const String imagesRotate = 'assets/images/rotate.png';
   static const String imagesSplashBg = 'assets/images/splash_bg.jpg';
   static const String logosAdidasLogo = 'assets/logos/adidas_logo.png';

@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bounce/flutter_bounce.dart';
 import 'package:oxy_boot/Styles/FontStyles.dart';
+import 'package:flutter_slide_drawer/flutter_slide_widget.dart';
+
 
 
 
 import '../Styles/Color.dart';
 import 'Brands.dart';
+import 'Drawer.dart';
 import 'ItemView.dart';
 
 class HomePage extends StatefulWidget {
@@ -19,10 +22,34 @@ class _HomePageState extends State<HomePage> {
 
   int NavigationIndex = 0;
 
+  final GlobalKey<SliderDrawerWidgetState> drawerKey = GlobalKey();
+
+  bool toggleBackgroundState = false;
+
+  void toggleBackgroundImage() {
+    setState(() {
+      toggleBackgroundState = !toggleBackgroundState;
+    });
+  }
+
+
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return SliderDrawerWidget(
+        key: drawerKey,
+        option: SliderDrawerOption(
+          backgroundImage: toggleBackgroundState
+              ? Image.asset("assets/sample_background.jpg")
+              : Image.asset("assets/sample_background2.jpg"),
+          backgroundColor: drawerColor,
+          sliderEffectType: SliderEffectType.Rounded,
+          upDownScaleAmount: 50,
+          radiusAmount: 50,
+          direction: SliderDrawerDirection.LTR,
+        ),
+        drawer: const MyDrawer(),
+        body: Scaffold(
       body: Container(
         width: double.infinity,
         height: double.infinity,
@@ -39,9 +66,9 @@ class _HomePageState extends State<HomePage> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Bounce(
-                        onPressed: () {
-                          
-                        },
+                         onPressed: () {
+                           drawerKey.currentState!.toggleDrawer();
+                           },
                         duration: const Duration(milliseconds: 500),
                         child: Image.asset(
                           "assets/icons/menu_ic.png",
@@ -353,7 +380,7 @@ class _HomePageState extends State<HomePage> {
         ),
 
       ),
-
+        )
     );
   }
 }
