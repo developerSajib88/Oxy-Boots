@@ -9,12 +9,30 @@ TextStyle textStyle1 = TextStyle(
   fontFamily: "airbnb"
 );
 
+
+TextStyle textStyle8 = const TextStyle(
+    color: Colors.white,
+    fontSize: 12.0,
+    fontWeight: FontWeight.w600,
+    fontFamily: "airbnb"
+);
+
+
+
 TextStyle textStyle2 = TextStyle(
     color: customBlack,
     fontSize: 14.0,
     fontWeight: FontWeight.w600,
     fontFamily: "airbnb"
 );
+
+TextStyle textStyle7 = TextStyle(
+    color: customGrey,
+    fontSize: 14.0,
+    fontWeight: FontWeight.w600,
+    fontFamily: "airbnb"
+);
+
 
 
 TextStyle textStyle3 = const TextStyle(

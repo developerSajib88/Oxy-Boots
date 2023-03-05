@@ -3,6 +3,7 @@ class Assets {
   Assets._();
 
   static const String fontAirbnbCerealWBd = 'assets/font/AirbnbCereal_W_Bd.otf';
+  static const String iconsBackIc = 'assets/icons/back_ic.png';
   static const String iconsBagIc = 'assets/icons/bag_ic.png';
   static const String iconsCartIc = 'assets/icons/cart_ic.png';
   static const String iconsFavouriteIc = 'assets/icons/favourite_ic.png';
@@ -13,6 +14,7 @@ class Assets {
   static const String iconsSearchIc = 'assets/icons/search_ic.png';
   static const String iconsUserIc = 'assets/icons/user_ic.png';
   static const String imagesBottomnavBg = 'assets/images/bottomnav_bg.png';
+  static const String imagesRotate = 'assets/images/rotate.png';
   static const String imagesSplashBg = 'assets/images/splash_bg.jpg';
   static const String logosAdidasLogo = 'assets/logos/adidas_logo.png';
   static const String logosConverseLogo = 'assets/logos/converse_logo.png';
